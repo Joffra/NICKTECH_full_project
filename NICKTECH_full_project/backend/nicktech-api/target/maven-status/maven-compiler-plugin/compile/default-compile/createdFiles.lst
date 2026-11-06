@@ -1,0 +1,7 @@
+org/nicktech/NicktechApplication.class
+org/nicktech/controller/AuthController.class
+org/nicktech/controller/AdminController.class
+org/nicktech/config/SecurityConfig.class
+org/nicktech/repository/UserRepository.class
+org/nicktech/controller/HealthController.class
+org/nicktech/model/User.class

@@ -1,0 +1,52 @@
+CREATE DATABASE IF NOT EXISTS nicktech;
+USE nicktech;
+
+CREATE TABLE users (
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(120) NOT NULL,
+ email VARCHAR(180) NOT NULL UNIQUE,
+ password VARCHAR(255) NOT NULL,
+ role VARCHAR(30) NOT NULL DEFAULT 'USER',
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE formations (
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(180) NOT NULL,
+ description TEXT,
+ category VARCHAR(100),
+ level VARCHAR(50),
+ duration VARCHAR(50),
+ trainer VARCHAR(120),
+ status VARCHAR(30) DEFAULT 'ACTIVE'
+);
+
+CREATE TABLE events (
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(180) NOT NULL,
+ description TEXT,
+ event_date DATE,
+ event_time VARCHAR(50),
+ location VARCHAR(255),
+ status VARCHAR(30) DEFAULT 'ACTIVE'
+);
+
+CREATE TABLE registrations (
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ user_id BIGINT NOT NULL,
+ formation_id BIGINT NULL,
+ event_id BIGINT NULL,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ FOREIGN KEY (user_id) REFERENCES users(id),
+ FOREIGN KEY (formation_id) REFERENCES formations(id),
+ FOREIGN KEY (event_id) REFERENCES events(id)
+);
+
+CREATE TABLE contact_messages (
+ id BIGINT AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(120),
+ email VARCHAR(180),
+ subject VARCHAR(180),
+ message TEXT,
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

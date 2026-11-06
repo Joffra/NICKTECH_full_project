@@ -1,0 +1,7 @@
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/NicktechApplication.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/config/SecurityConfig.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/controller/AdminController.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/controller/AuthController.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/controller/HealthController.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/model/User.java
+/Users/jonelfrancois/Desktop/Prgrammation/NICKTECH_full_project/NICKTECH_full_project/backend/nicktech-api/src/main/java/org/nicktech/repository/UserRepository.java
